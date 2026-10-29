@@ -20,6 +20,8 @@ def get(request):
     return render(request,"codeejemplo.html",{"text":limpiar_texto(hola)})
 #def index(request):
 #    return HttpResponse("<h1>!Hola Esta es la pagina principal de Encuesta. </h1>")
+def registrate_view(request):
+    return render(request,"registrate.html",)
 
 @login_required
 def home_view(request):
